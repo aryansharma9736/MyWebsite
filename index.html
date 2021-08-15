@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My Website</title>
+    <title>Creative CV</title>
     <meta name="description"/>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="{{ url_for('static',filename = 'css/aos.css' )}}" rel="stylesheet">
-    <link href=" {{ url_for('static',filename = 'css/bootstrap.min.css')}} " rel="stylesheet">
-    <link href="{{ url_for('static',filename = 'styles/main.css') }}" rel="stylesheet">
+    <link href="{{ url_for('css',filename = 'aos.css' )}}" rel="stylesheet">
+    <link href=" {{ url_for('css',filename = 'bootstrap.min.css')}} " rel="stylesheet">
+    <link href="{{ url_for('styles',filename = 'main.css') }}" rel="stylesheet">
     <style type="text/css">
       li{
         font-style: bolder;
@@ -44,14 +44,12 @@
 <div class="profile-page">
   <div class="wrapper">
     <div class="page-header page-header-small" filter-color="blue">
-      <div class="page-header-image" data-parallax="true" style="background-image: url('../static/images/Computer.jpg');"></div><!-- main background image-->
+      <div class="page-header-image" data-parallax="true" style="background-image: url('Computer.jpg');"></div><!-- main background image-->
       <div class="container">
         <div class="content-center">
-          <div class="cc-profile-image"><a href="#"><img src="../static/images/myimage.jpg" alt="Profile photo"/></a></div>
+          <div class="cc-profile-image"><a href="#"><img src="myimage.jpg" alt="Profile photo"/></a></div>
           <div class="h2 title">Aryan Sharma</div>
-          <p class="category text-white">Computer Science Student at JSS Science And Technology University </p>
-          <a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a>
-          <a class="btn btn-primary" href="../static/Aryan Sharma.pdf" download="Myresume" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">My resume</a>
+          <p class="category text-white">Web Developer, Graphic Designer,  Photographer</p><a class="btn btn-primary smooth-scroll mr-2" href="#contact" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">Hire Me</a><a class="btn btn-primary" href="file:///C:/Users/Aryan%20Sharma/Downloads/Aryan's%20Resume.pdf" download="Myresume" data-aos="zoom-in" data-aos-anchor="data-aos-anchor">My resume</a>
         </div>
       </div>
       <div class="section">
@@ -69,7 +67,7 @@
         <div class="col-lg-6 col-md-12">
           <div class="card-body">
             <div class="h4 mt-0 title">About</div>
-            <p>Knowledgeable, performance-driven, and detail-oriented Computer Science student. Possess great technological expertise, well-developed communication skill, and important ability to perform well in a team.
+            <p>Knowledgeable, performance-driven, and detail-oriented Computer Science student who excels at designing and developing user interfaces. Equipped with a diverse and promising skill-set. Proficient in an assortment of technologies, including HTML, CSS, JavaScript and Responsive Web designing. Possess great technological expertise, well-developed communication skill, and important ability to perform well in a team.
     Able to effectively self-manage during independent projects as well</p>
             
           </div>
@@ -195,14 +193,14 @@
         <div class="ml-auto mr-auto">
           <div class="row">
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://github.com/aryansharma9736/DBMS-RailwayScheduling.git">
-                  <figure class="cc-effect" ><img src="../static/images/railway.JPG" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="railway.JPG" alt="Image"/>
                     <figcaption>
                       <div class="h4">Railway Management System</div>
                       <p>HTML,CSS,JavaScript,Django and MySQL</p>
                     </figcaption>
                   </figure></a></div>
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://github.com/aryansharma9736/DogBlog.git">
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
                   <figure class="cc-effect"><img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80" alt="Image"/ width="700px" align="center">
                     <figcaption>
                       <div class="h4">Dog Blog Application</div>
@@ -212,24 +210,15 @@ framework and SQLite to store data.</p>
                   </figure></a></div>
             </div>
             <div class="col-md-6">
-              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://github.com/aryansharma9736/Covido.git">
-                  <figure class="cc-effect"><img src="../static/images/covido.JPG" alt="Image"/>
+              <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="#web-development">
+                  <figure class="cc-effect"><img src="covido.JPG" alt="Image"/>
                     <figcaption>
-                      <div class="h4">Covido
-                      </div>
+                      <div class="h4">Covido</div>
                       <p>HTML,CSS,JavaScript,Boostrap and Flask</p>
                     </figcaption>
                   </figure></a></div>
              
-            
-            <div class="cc-porfolio-image img-raised" data-aos="fade-up" data-aos-anchor-placement="top-bottom"><a href="https://codepen.io/aryansharma/pen/dyGEOgW">
-              <figure class="cc-effect"><img src="../static/images/saturn.JPG" alt="Image" href="https://codepen.io/aryansharma/pen/dyGEOgW" height="150%">
-                <figcaption>
-                  <div class="h4">Animation Using CSS</div>
-                  <p>HTML, CSS</p>
-                </figcaption>
-              </figure></a></div>
-              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -248,8 +237,7 @@ framework and SQLite to store data.</p>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Front End Developer</div>
-            <p>Worked with the front-end team to develop a dashboard using HTML,CSS,Bootstrap and JavaScript
-               for the website of a startup.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
         </div>
       </div>
@@ -265,16 +253,27 @@ framework and SQLite to store data.</p>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
             <div class="h5">Beta Course Tester</div>
-            <p>A a part of the Beta Tester Community of Coursera I review courses on coursera 
-              before they are released for
-               the students to access to check for any mistakes
-              or problems I faced during the completition the course.
-            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Urna nunc id cursus metus aliquam eleifend mi. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Neque viverra justo nec ultrices dui sapien eget mi proin. Nunc id cursus metus aliquam eleifend mi in nulla posuere. Maecenas sed enim ut sem viverra aliquet eget sit amet. Nisi lacus sed viverra tellus in. Iaculis eu non diam phasellus vestibulum lorem sed risus. Nulla facilisi etiam dignissim diam</p>
           </div>
         </div>
       </div>
     </div>
-   
+    <div class="card">
+      <div class="row">
+        <div class="col-md-3 bg-primary" data-aos="fade-right" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body cc-experience-header">
+            <p>April 2013 - February 2014</p>
+            <div class="h5">Amazon</div>
+          </div>
+        </div>
+        <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
+          <div class="card-body">
+            <div class="h5">Intern</div>
+            <p>Tincidunt nunc pulvinar sapien et ligula ullamcorper. Ac ut consequat semper viverra nam libero justo laoreet. Eget magna fermentum iaculis eu non. Eget duis at tellus at urna condimentum mattis. Est ultricies integer quis auctor elit sed vulputate mi sit. Faucibus turpis in eu mi bibendum. Cursus risus at ultrices mi tempus imperdiet nulla.</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 <div class="section">
@@ -323,7 +322,7 @@ framework and SQLite to store data.</p>
         </div>
         <div class="col-md-9" data-aos="fade-left" data-aos-offset="50" data-aos-duration="500">
           <div class="card-body">
-            <div class="h5">CGPA 10/10</div>
+            <div class="h5">10 CGPA</div>
             <p class="category">Jodhamal Public School</p>
           </div>
         </div>
@@ -366,7 +365,7 @@ at school.
 
 
 <div class="section" id="contact">
-  <div class="cc-contact-information" style="background-image: url('../static/images/maps.png');">
+  <div class="cc-contact-information" style="background-image: url('maps.png');">
     <div class="container">
       <div class="cc-contact">
         <div class="row">
@@ -376,14 +375,8 @@ at school.
               <div class="row">
                 <div class="col-md-6">
                   <div class="card-body">
-                    <p class="mb-0"><strong>Linkedin </strong></p>
-                    <p class="pb-2">https://www.linkedin.com/in/aryansharma9736</p>
-                    <p class="mb-0"><strong>Github </strong></p>
-                    <p class="pb-2">https://github.com/aryansharma9736</p>
-                    <p class="mb-0"><strong>Codepen </strong></p>
-                    <p class="pb-2">https://codepen.io/aryansharma</p>
-
-
+                    <p class="mb-0"><strong>Address </strong></p>
+                    <p class="pb-2">75/2,Channi Himmat Jammu,J&k,India</p>
                   </div>
                 </div>
                 <div class="col-md-6">
@@ -413,11 +406,11 @@ at school.
        
       </div>
     </footer>
-    <script src="{{ url_for('static',filename = 'js/core/jquery.3.2.1.min.js') }}"></script>
-    <script src="{{ url_for('static',filename='js/core/popper.min.js')}}"></script>
-    <script src="{{url_for('static',filename='js/core/bootstrap.min.js')}}"></script>
-    <script src="{{ url_for('static',filename='js/now-ui-kit.js?v=1.1.0')}}"></script>
-    <script src="{{ url_for('static',filename='js/aos.js')}}"></script>
-    <script src="{{ url_for('static',filename='scripts/main.js')}}"></script>
+    <script src="{{ url_for('js',filename = 'core/jquery.3.2.1.min.js') }}"></script>
+    <script src="{{ url_for('js',filename='core/popper.min.js')}}"></script>
+    <script src="{{url_for('js',filename='core/bootstrap.min.js')}}"></script>
+    <script src="{{ url_for('js',filename='now-ui-kit.js?v=1.1.0')}}"></script>
+    <script src="{{ url_for('js',filename='aos.js')}}"></script>
+    <script src="{{ url_for('scripts',filename='main.js')}}"></script>
   </body>
 </html>
